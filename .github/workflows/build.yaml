@@ -138,5 +138,5 @@ jobs:
           prerelease: false
           tag: ${{ env.CLOUDFLARED_VERSION }}-${{ env.BUILD_ID }}
           makeLatest: true
-          bodyFile: 'cloudflared/built_artifacts/.release_notes.md'
+          bodyFile: 'cloudflared/built_artifacts/.release-notes.md'
           artifacts: 'cloudflared/built_artifacts/cloudflared*'
