@@ -8,6 +8,10 @@ on:
     paths:
       - 'version'
 
+permissions:
+  id-token: write
+  attestations: write
+
 concurrency:
   group: build
   cancel-in-progress: true
