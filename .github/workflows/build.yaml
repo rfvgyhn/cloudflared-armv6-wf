@@ -8,10 +8,6 @@ on:
     paths:
       - 'version'
 
-permissions:
-  id-token: write
-  attestations: write
-
 concurrency:
   group: build
   cancel-in-progress: true
@@ -22,6 +18,8 @@ jobs:
     timeout-minutes: 360
     permissions:
       contents: write
+      id-token: write
+      attestations: write
     env:
       GOOS: linux
       GOARCH: arm
